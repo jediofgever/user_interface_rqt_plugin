@@ -406,7 +406,7 @@ void RQTGUIControlPlugin::StartPickPlace() {
     popUp->setPopupText(
         "STARTING PIVK AND PLACE, IT MAY TAKE UP TO 10 SECONDS ,PLEASE  CLICK ONCE AND  WAIT,  PROCESSING NOW.... ");
     popUp->show();
-    system("~/catkin_ws/src/PICK_PLACE_with_ROS_on_FANUC_ARM/arm_perception_utilities/launch/start_pickplace.sh");
+    system("~/catkin_ws/src/arm_perception_utilities/launch/start_pickplace.sh");
 }
 
 /**
@@ -417,7 +417,7 @@ void RQTGUIControlPlugin::restart() {
     popUp->setPopupText("GONNA KILL PICK AND PLACE NODE ");
     popUp->show();
     system("rosnode kill real_pickplace_ros_node");
-    system("~/catkin_ws/src/PICK_PLACE_with_ROS_on_FANUC_ARM/arm_perception_utilities/launch/pickplace.sh");
+    system("~/catkin_ws/src/arm_perception_utilities/launch/pickplace.sh");
 }
 
 /**
